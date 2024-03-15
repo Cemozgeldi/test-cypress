@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// Cypress.Commands.add('login',(identifier,username,password)=>{
+//     cy.visit('https://www.saucedemo.com/');
+//     cy.get('#Identifier').type(identifier);
+//     cy.get('#UserName').type(username);
+//     cy.get('#Password').type(password);
+//     cy.get('#LOGIN').click();
+// });
+require('cypress-xpath')
